@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+.footer {
+    background-color: #F2EB28;
+}
+
 .main {
     position: relative;
     bottom: 0;
@@ -42,7 +46,7 @@
     justify-content: center;
 }
 
-.wa:hover {
+.email:hover {
     color: white;
     transition: all 0.5s ease 0s;
 }

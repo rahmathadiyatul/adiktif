@@ -1,0 +1,70 @@
+.theTeam {
+    height: 100vh;
+    background-color: none;
+}
+
+h1 {
+    color: #F2EB28
+}
+
+.teamContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamMembers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamMember {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.memberDetails {
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.memberDetails h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.memberDetails p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.teamMember:hover .profilePicture {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.teamMember:hover .memberDetails {
+    transform: translateY(-5px);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}

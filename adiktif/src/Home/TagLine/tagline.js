@@ -5,7 +5,7 @@ import './tagline.css'
 const TagLine = () => {
     return (
         <main>
-            <h1>You Dream It<br></br>We'll Realize It!</h1>
+            <h1>You Dream It, We'll Realize It!</h1>
         </main >
     )
 }

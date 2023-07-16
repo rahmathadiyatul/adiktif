@@ -1,23 +1,18 @@
 import React from 'react';
-import { Box } from '@mui/material';
 import './withus.css';
+import Boxes from './boxes';
 
 const WithUs = () => {
     return (
-        <div className='aboutUs'>
-            <div className='aboutContent'>
-                <h1>About Us</h1>
-                <p>
-                    "Adiktif" is an acronym for the name of a company PT ANUGERAH DANAKIRTI KREATIF.<br />
-                    We can break down the words and assign each letter to a specific term or concept related to
-                    the company's products or services.
-                </p>
-                <br />
-                <p>
-                    Adiktif is actually an acronym that represents the core values and offerings of our company.<br />
-                    Apart from that, we create experiences that are highly engaging, capturing the attention,
-                    and interest of our audience.
-                </p>
+        <div className='withUs'>
+            <div className='withContent'>
+                <h1>With Us</h1>
+                <section className='content'>
+                    <p>As a company engaged in the service industry, we always remember, providing exceptional
+                        service is an ongoing effort. Here are some key points to consider when you join make
+                        a plan or dream become realize with us</p>
+                </section>
+                <Boxes></Boxes>
             </div>
         </div>
     );

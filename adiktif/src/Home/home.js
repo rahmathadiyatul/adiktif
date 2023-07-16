@@ -38,7 +38,7 @@ const Home = () => {
     };
     return (
         <div>
-            <div className="background-image"></div>
+            {/* <div className="background-image"></div> */}
             <div className='fullweb'>
                 <Header
                     scrollToAbout={scrollToAboutSection}
