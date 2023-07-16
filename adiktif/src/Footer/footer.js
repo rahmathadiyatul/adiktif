@@ -9,10 +9,10 @@ const Footer = () => {
         <div>
             <Box className="main" >
                 <Box className="controlBox">
-                    <div className="aboutUs">Contact Us</div>
+                    <div className="contactUs">Contact Us</div>
                     <div className='icons'>
-                        <Instagram sx={{ margin: '0 0.5em' }}></Instagram>
-                        <WhatsApp sx={{ margin: '0 0.5em' }}></WhatsApp>
+                        <section><Instagram className='ig' sx={{ margin: '0 0.5em' }}></Instagram></section>
+                        <section><WhatsApp className='wa' sx={{ margin: '0 0.5em' }}></WhatsApp></section>
                     </div>
                 </Box>
             </Box>

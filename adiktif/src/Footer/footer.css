@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .main {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -24,23 +24,30 @@
     justify-content: flex-start;
 }
 
-.aboutUs {
+.contactUs {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    color: #F2EB28;
+    font-size: 22px;
+    color: #C82533;
     background: rgba(0, 0, 0, 0);
     text-align: center;
-    margin-bottom: 10px
+    margin-bottom: .25em
 }
 
 .icons {
-    color: #F2EB28;
-    text-align: center;
+    color: #C82533;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.icons:hover {
+.wa:hover {
     color: white;
-    transition: all 1s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.ig:hover {
+    color: white;
+    transition: all 0.5s ease 0s;
 }

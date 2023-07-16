@@ -2,21 +2,39 @@ import React from 'react'
 import './header.css'
 import { Link, useNavigate } from 'react-router-dom';
 
-const Header = () => {
-    const navigate = useNavigate()
-
+const Header = ({ scrollToAbout, scrollToWith, scrollToMeet, scrollToService }) => {
     return (
         <div>
             <header>
-                <Link to='/'>
-                    <img className='logo' src="https://res.cloudinary.com/dxyxg3egs/image/upload/v1665861626/SoupProject/image_1_1_tj3sdx.png" alt="logo"></img>
-                </Link>
-                <nav>
-                    <ul className='nav_links'>
-                        <li><Link to='/myclass'>About Us</Link></li>
-                        <li><Link to='/invoice'>Our Services</Link></li>
-                    </ul>
-                </nav>
+                <div className='header-content'>
+                    <Link to='/'>
+                        <img className='logo' src="https://res.cloudinary.com/dxyxg3egs/image/upload/v1689435276/Logo_-_Hitam_dto8ir.png" alt="logo"></img>
+                    </Link>
+                    <nav>
+                        <ul className='nav_links'>
+                            <li>
+                                <a href="#about" onClick={scrollToAbout}>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#withus" onClick={scrollToWith}>
+                                    With Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#meetus" onClick={scrollToMeet}>
+                                    Meet the Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ourservices" onClick={scrollToService}>
+                                    Our Services
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         </div >
     )
