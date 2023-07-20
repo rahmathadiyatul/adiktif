@@ -1,5 +1,6 @@
 .services {
     height: 100vh;
+
 }
 
 .serviceContent {
@@ -8,4 +9,53 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.serviceContent h1 {
+    padding-top: 5%;
+    font-size: 4em;
+    color: #F6F6F5;
+}
+
+.serviceImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #F6F6F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.serviceItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceItem {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceName h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F6F6F5;
+}
+
+.serviceItem:hover .serviceImage {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.serviceItem:hover .serviceName {
+    transform: translateY(-5px);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
