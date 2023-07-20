@@ -33,6 +33,7 @@ h1 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: .5em solid #F2EB28;
     overflow: hidden;
     background-color: #fff;
     display: flex;
@@ -40,6 +41,12 @@ h1 {
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profilePicture img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .memberDetails {
@@ -60,8 +67,8 @@ h1 {
 }
 
 .teamMember:hover .profilePicture {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+    box-shadow: 0 8px 8px rgba(242, 235, 40, 0.5);
 }
 
 .teamMember:hover .memberDetails {

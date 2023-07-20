@@ -49,8 +49,7 @@
     margin: 0;
     padding: 0;
     align-items: stretch;
-
-    /* Added property to stretch items vertically */
+    border: 1px solid black;
 }
 
 .box {
@@ -69,7 +68,6 @@
     margin: 0;
     padding: 0 .5em;
     background-color: #54509F;
-    border-left: 3px solid black;
     border-radius: 3em;
     display: flex;
     align-items: center;
@@ -79,4 +77,15 @@
 .left-box img {
     padding: .25em 0;
     height: 5em;
+}
+
+.container:hover .left-box {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover .right-box {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 8px rgba(84, 80, 159, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
